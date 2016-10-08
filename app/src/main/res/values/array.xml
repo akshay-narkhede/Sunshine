@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="l_options">
+        <item>@string/MUMBAI</item>
+        <item>@string/BOSTON</item>
+        <item>@string/LONDON</item>
+    </string-array>
+
+    <string-array name="l_values">
+        <item>@string/v1</item>
+        <item>@string/v2</item>
+        <item>@string/v3</item>
+
+    </string-array>
+
+
+</resources>

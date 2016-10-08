@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2d52b8"
+    tools:context="com.example.narkh.weatherapp.MainActivityFragment">
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#edf9fe"
+        tools:context="com.example.narkh.weatherapp.MainActivityFragment"
+        tools:showIn="@layout/activity_main">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/frameLayout"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="#5e6ff0"
+            android:paddingTop="5dp"
+            android:text="    date -  time  -  description  -  max / min"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="15sp"></TextView>
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="left|top"
+            android:layout_margin="15dp"
+            android:src="@drawable/image1"></ImageView>
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/image1"
+            android:text="  TODAY"
+            android:textAllCaps="true"
+            android:textColor="#000dff"
+            android:textIsSelectable="false"
+            android:textSize="25dp" />
+
+
+        <TextView
+            android:id="@+id/text_id"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t1"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:layout_toRightOf="@id/image1"
+            android:textAllCaps="true"
+            android:textSize="20sp" />
+
+
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/list_View"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:layout_below="@+id/frameLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="#edf9fe"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:divider="#00089a"
+        android:dividerHeight="2sp"
+        android:drawSelectorOnTop="false"
+        android:fastScrollEnabled="true"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true" />
+
+</RelativeLayout>
